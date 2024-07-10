@@ -1,0 +1,290 @@
+/* Make Play button smaller */
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem .paper-icon-button-light[data-action=resume] {
+  border-radius: 10px!important;
+  font-size: 1.25em;
+}
+
+.cardOverlayContainer>.cardOverlayFab-primary {
+    background-color: rgba(0, 0, 0, .5);
+}
+	
+/* Make title background more transparent on details page */
+.detailRibbon {
+ background: rgba(0, 0, 0, 0)!important;
+}
+
+/* Transparent top bar */
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+background: none;
+background-color: rgba(0, 0, 0, 0);
+}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+background: none;
+background-color: rgba(0, 0, 0, 0);
+}
+
+.osdHeader {
+  background: linear-gradient(180deg, hsla(0, 0%, 6%, .75), hsla(0, 0%, 6%, 0))!important;
+}
+
+.cardContent-button,
+.itemDetailImage {
+border-radius: 0.25em;
+}
+
+/* Narrow the login form */
+#loginPage .readOnlyContent,
+#loginPage form {
+max-width: 22em;
+}
+
+/* Hide "please login" text, margin is to prevent login form moving too far up */
+#loginPage h1 {
+display: none;
+}
+#loginPage .padded-left.padded-right.padded-bottom-page {
+margin-top: 50px;
+}
+
+/* Hide "manual" and "forgot" buttons */
+#loginPage .raised.cancel.block.btnManual.emby-button {
+display: none;
+}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+display: none;
+}
+
+
+/* Shrink and square (or round) cast thumbnails */
+#castContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {width: 4.2cm !important; font-size: 90% !important;}
+#castContent .card.overflowPortraitCard.personCard.card-withuserdata {width: 4.2cm !important; font-size: 90% !important;}
+
+/* Correct image aspect ratio behavior, set border-radius to zero for square tiles */
+#castContent .cardContent-button.cardImageContainer.coveredImage.cardContent.cardContent-shadow.itemAction.lazy {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground1.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground2.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground3.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground4.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground5.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardScalable {width: 3.8cm !important; height: 3.8cm !important; border-radius: 2.5cm;}
+#castContent .cardOverlayContainer.itemAction {border-radius: 2.5cm;}
+
+/* Center the mouseover buttons */
+#castContent .cardOverlayButton-br {bottom: 4%; right: 15%; width: 70%;}
+#castContent .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light {margin:auto;}
+
+
+/* Darken background, only works with blue radiance */
+.backgroundContainer {
+background-color: #000000;
+filter: brightness(50%);
+}
+/*
+@media all and (min-width: 50em) {
+.homePage .emby-scroller {
+  margin-right: 0;
+}
+.homePage .emby-scrollbuttons {
+  display: none;
+}
+.homePage .itemsContainer {
+  flex-wrap: wrap;
+}
+}
+
+/* Make title background more transparent on details page */
+.detailRibbon {
+background: rgba(0, 0, 0, 0);
+}
+
+.cardIndicators,.listItemIndicators {
+    right: 0!important;
+    top: 0!important
+}
+
+.cardIndicators .indicator,.listItemIndicators .indicator {
+    background: linear-gradient(130deg,var(--accent1-light),var(--accent2-light));
+    border-radius: 0 10px 0 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.7);
+}
+
+/* Make watched icon more transparent */
+.cardIndicators .indicator, .listItemIndicators, .indicator, .playedIndicator {
+    opacity: 0.9 !important;
+}
+
+/* Hide Tags */
+.itemTags {display: none !important;}
+
+/* Remove big spaces between different tags, links etc. */
+#itemDetailPage .button-link.emby-button {
+	margin-right: 0 !important;
+}
+
+#itemDetailPage .emby-button {
+	margin-right: .4em !important;
+}
+
+/* Fix long episode descriptions */
+.listItem-overview > bdi {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+}
+
+/* Add more padding to episode list */
+
+@media (min-width: 50em) {
+  #itemDetailPage .listItem {
+      margin-bottom: .35em;
+      margin-top: .35em;
+	  border-radius: 6px !important;
+
+  }
+}
+
+/* Dashboard transparent header */
+.MuiBox-root > header {
+  background: transparent;
+  box-shadow: none;
+}
+
+
+/* Make card overlay buttons (favourite, watched etc) smaller */
+.cardOverlayButton-br > button {
+    font-size: 0.8em !important;
+}
+
+/* Horizontal My Media */
+#indexPage .section2 .itemsContainer {
+  flex-wrap: nowrap !important;
+}
+
+#indexPage .section2 .emby-scrollbuttons {
+  display: block !important;
+}
+
+* {
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+/* Jellyskin Colors */
+
+:root {
+--accent1-light: #a95bc2;
+--accent1-dark: #3f2348;
+--accent1-light-opacity1: rgba(169, 91, 194, .4);
+--accent2-light: #00a4db;
+--accent2-dark: #003d52
+}
+/* Skip Intro Button */
+
+.skipIntro {
+  background: rgba(6, 54, 96, 0.75)!important;
+  border: none;
+  border-radius: 0.5em;
+  bottom: 6em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  color: #fff!important;
+  font-size: 1.0em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 6em;
+}
+
+.skipIntro:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.skipIntro:after {
+  background: linear-gradient(130deg,var(--accent1-light),var(--accent2-light));
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity .1s linear;
+  width: 100%;
+  z-index: 0;
+}
+
+.skipIntro .paper-icon-button-light {
+  color: #fff!important;
+  z-index: 1
+}
+
+.skipIntro:focus:after,.skipIntro:hover:after {
+  opacity: 0.85
+}
+
+
+/* Progress Bar */
+
+.innerCardFooter {
+border-radius: 10px;
+margin-bottom: 0%;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+opacity: 80%;
+}
+
+.innerCardFooter .itemProgressBar {
+/*background: hsla(0, 0%, 50%, 0.5);*/
+background: hsla(0, 0%, 100%, .33);
+height: .5em;
+}
+
+.innerCardFooter .itemProgressBar .itemProgressBarForeground {
+background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+border-radius: 4em!important;
+}
+
+/* Don't push down 'Home' and 'Favourites' tabs on smaller screens*/
+@media (max-width: 100em) {
+    .sectionTabs {
+		-webkit-align-items: center;
+        align-items: center;
+        -webkit-align-self: center;
+        align-self: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        margin-top: -4.3em;
+        position: relative;
+        width: auto;
+    }
+}
+
+/* Add margins to 'Play all' and three dots buttons */
+
+.itemsViewSettingsContainer>.button-flat {
+    margin-left: .75em!important;
+}
+
+
+/* Change heart and watched button colors from red to blue
+.ratingbutton-icon-withrating, 
+.playstatebutton-icon-played {
+    color: var(--accent2-light) !important;
+}
+*/
+
+/* Fix hover button stuff */
+@media (hover: hover) and (pointer: fine) {
+    .cardOverlayButton:not(.cardOverlayFab-primary):hover:not(:disabled),
+	.detailButton:hover:not(:disabled)	{
+        color: #00a4dc;
+        background-color: rgba(0, 164, 220, 0.2) !important;
+		border-radius: 10px;
+    }
+}
+
+/*Modify subtitle settings page*/
+.subtitleappearance-preview {
+  background: linear-gradient(140deg,#444,#111) !important;
+}

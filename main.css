@@ -1,0 +1,1317 @@
+:root {
+    --accent1-light: #a95bc2;
+    --accent1-dark: #3f2348;
+    --accent1-light-opacity1: rgba(169, 91, 194, .4);
+    --accent2-light: #00a4db;
+    --accent2-dark: #003d52
+}
+
+.withTabs .content-primary {
+    padding-top: 1em !important
+}
+
+.scrollY {
+    mask-image: none;
+    -webkit-mask-image: none;
+    padding: 1em 0
+}
+
+.pageTabContent {
+    padding: 0 1em
+}
+
+.appfooter {
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background: rgba(0, 0, 0, .65)
+}
+
+::-moz-selection {
+    background: var(--accent2-light)
+}
+
+::selection {
+    background: var(--accent2-light)
+}
+/*
+.layout-desktop body,
+.layout-mobile body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+}
+
+div#reactRoot {
+    display: flex;
+    flex-direction: column;
+    height: 100vh
+}
+
+div[data-role=page].page {
+    mask-image: linear-gradient(0deg, #000 1em calc(100% - 2em), transparent);
+    -webkit-mask-image: linear-gradient(0deg, #000 1em calc(100% - 2em), transparent);
+    overflow: hidden visible;
+    padding: 2em 0 !important;
+    position: absolute
+}
+
+div[data-role=page].page#searchPage {
+    margin-top: 4.4em
+}
+
+.mainAnimatedPages.skinBody {
+    height: 100%;
+    position: relative
+}
+*/
+.selectionCommandsPanel {
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background: rgba(0, 0, 0, .75);
+    box-shadow: 0 0 15px #000
+}
+
+.emby-button {
+    position: relative
+}
+
+.emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button),
+.emby-button[is=emby-button]:not(.emby-tab-button) {
+    background: #063660;
+    border-radius: 100vh;
+    overflow: hidden
+}
+
+.emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button):after,
+.emby-button[is=emby-button]:not(.emby-tab-button):after {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .1s linear;
+    width: 100%;
+    z-index: -1
+}
+
+.emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button):focus:after,
+.emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button):hover:after,
+.emby-button[is=emby-button]:not(.emby-tab-button):focus:after,
+.emby-button[is=emby-button]:not(.emby-tab-button):hover:after {
+    opacity: 1
+}
+
+.emby-button.emby-collapsible-button {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none
+}
+
+.emby-button.emby-collapsible-button:after {
+    display: none !important
+}
+
+.paper-icon-button-light {
+    border-radius: 10px
+}
+
+.skipIntro {
+    background: #063660 !important;
+    border: none;
+    border-radius: 100vh;
+    bottom: 12em;
+    box-shadow: 0 0 15px #000;
+    color: #fff !important;
+    font-size: 1.2em;
+    overflow: hidden;
+    padding: .5em;
+    right: 8em
+}
+
+.skipIntro:hover {
+    box-shadow: 0 0 15px #000 !important
+}
+
+.skipIntro:after {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .1s linear;
+    width: 100%;
+    z-index: 0
+}
+
+.skipIntro .paper-icon-button-light {
+    color: #fff !important;
+    z-index: 1
+}
+
+.skipIntro:focus:after,
+.skipIntro:hover:after {
+    opacity: 1
+}
+
+.dialog .emby-button:not(.cardImageContainer, .actionSheetMenuItem).button-delete {
+    background: #f70000 !important
+}
+
+.emby-scroller {
+    margin-top: .5em;
+    overflow: hidden !important;
+}
+
+.layout-mobile .emby-scroller {
+    overflow-x: scroll !important
+}
+
+.card {
+    contain: none !important
+}
+
+.card.overflowSquareCard .cardScalable {
+    aspect-ratio: 1
+}
+
+.card.overflowSquareCard .cardImageContainer:after {
+    background-size: contain !important
+}
+
+.cardOverlayContainer {
+    background: rgba(0, 0, 0, .5)
+}
+
+.cardImageIcon {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+.cardScalable {
+    aspect-ratio: auto;
+    border-radius: 10px 10px 0 0;
+    box-shadow: none !important;
+    overflow: hidden;
+    position: relative;
+    width: calc(100% + 1px)
+}
+
+.cardScalable>* {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    width: 100%
+}
+
+.backdropCard > .cardBox > .cardScalable:not(.imageEditorCard) .cardImageContainer {
+    background-size: fill !important;
+    background-size: fill !important;
+	background-color: rgba(0, 0, 0, .2);
+	box-shadow: none !important;
+}
+
+.detailImageContainer > .backdropCard > .cardBox > .cardScalable:not(.imageEditorCard) .cardImageContainer {
+   background-size: cover!important;
+}
+/*
+.cardScalable:not(.imageEditorCard) .cardImageContainer:before {
+    filter: blur(5px) brightness(50%);
+    height: calc(100% + 20px);
+    left: -10px;
+    top: -10px;
+    width: calc(100% + 20px);
+    z-index: -1
+}
+*/
+.card:focus-visible .cardImageContainer:after,
+.card:hover .cardImageContainer:after {
+    transform: scale(1)
+}
+/*
+.card.personCard {
+    height: auto
+}
+
+.card.personCard .cardPadder-overflowPortrait .cardImageIcon {
+    color: transparent !important
+}
+
+.card.personCard .cardBox {
+    position: relative
+}
+
+.card.personCard .cardOverlayContainer {
+    background: transparent !important;
+    z-index: 3
+}
+
+.card.personCard .cardOverlayButton-br {
+    bottom: .5em;
+    right: .5em
+}
+
+.card.personCard .cardContent {
+    border-radius: 10px !important;
+    filter: brightness(1);
+    height: calc(100% - 2em);
+    margin: 1em !important;
+    transition: filter .25s ease-in-out;
+    width: calc(100% - 2em)
+}
+
+.card.personCard .cardScalable {
+    aspect-ratio: 1;
+    height: auto;
+	box-shadow: none!important;
+}
+
+.card.personCard .cardScalable .cardImageContainer:after {
+    background-size: cover
+}
+*/
+.cardBox {
+    background: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    /*box-shadow: 0 0 .5em rgba(0, 0, 0, .5);*/
+    /*margin: .5em 1.5em 1.5em 0 !important;*/
+    overflow: hidden;
+    transition: background .1s
+}
+
+.card:not([data-type=Person]) .cardText-secondary {
+    padding-bottom: .5em
+}
+
+.card:focus-visible .cardBox,
+.card:hover .cardBox {
+    background: rgba(0, 0, 0, .5)
+}
+
+
+/* Remove ugly bottom overlay from non 'Card' type items in library view*/
+
+.cardBox-bottompadded {
+    background: transparent!important;
+    box-shadow: none!important;
+}
+
+
+.cardBox-bottompadded > .cardScalable {
+    border-radius: 10px!important;
+	box-shadow: 0 0 .5em rgba(0, 0, 0, .75)!important;
+}
+
+.cardFooter {
+	background: rgba(25, 25, 25, 0.33)!important;
+}
+
+/* Remove ugly bottom overlay from non 'Card' type items in library view*/
+
+
+.card .squareCard .cardScalable {
+    padding-top: 100%;
+    width: 100%;
+	box-shadow: none !important;
+}
+
+.card[data-userid] .cardScalable {
+    padding-top: 0 !important
+}
+
+.card[data-userid] .cardScalable .cardContent {
+    padding-top: 100% !important
+}
+
+.cardPadder {
+    background: transparent !important
+}
+
+.cardPadder-square {
+    aspect-ratio: 0 !important;
+    padding: 0
+}
+
+.cardPadder-square+div {
+    aspect-ratio: 1
+}
+
+.cardImageContainer.defaultCardBackground {
+    background: transparent
+}
+
+.innerCardFooter {
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.innerCardFooter .itemProgressBar {
+    background: hsla(0, 0%, 100%, .3);
+    height: .4em
+}
+
+.innerCardFooter .itemProgressBar .itemProgressBarForeground {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light))
+}
+
+.cardOverlayContainer {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center
+}
+/*
+.cardOverlayButton {
+    border-radius: 100px !important
+}
+
+.cardOverlayButton span {
+    background: linear-gradient(0deg, var(--accent1-light) 10%, var(--accent2-light) 90%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    transition: .1s
+}
+
+.cardOverlayButton[data-action=resume] {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light)) !important;
+    border-radius: 10px!important;
+    color: #fff !important;
+    padding: 1.5em
+}
+
+.cardOverlayButton[data-action=resume]:focus-visible,
+.cardOverlayButton[data-action=resume]:hover {
+    filter: brightness(.5)
+}
+
+.cardOverlayButton:focus-visible,
+.cardOverlayButton:hover {
+    transform: scale(1) !important
+}
+*/
+.cardIndicators,.listItemIndicators {
+    right: 0!important;
+    top: 0!important
+}
+
+.cardIndicators .indicator,.listItemIndicators .indicator {
+    background: linear-gradient(130deg,var(--accent1-light),var(--accent2-light));
+    border-radius: 0 10px 0 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.7);
+}
+
+/* Make watched icon more transparent */
+.cardIndicators .indicator, .listItemIndicators, .indicator, .playedIndicator {
+    opacity: 0.9 !important;
+}
+
+[data-isfolder=true]:is([data-type=CollectionFolder], [data-type=UserView]):not([data-type=Series]) .cardText {
+    padding: .75em !important
+}
+
+[data-collectiontype=livetv] .cardText {
+    padding: .75em !important
+}
+
+.cardText:nth-child(4) {
+    display: none
+}
+
+.defaultCardBackground {
+    background: linear-gradient(130deg, var(--accent1-dark), var(--accent2-dark)) !important
+}
+
+.chapterCard .innerCardFooter {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, .6);
+    border-radius: 0 1em 1em 0 !important
+}
+
+.layout-mobile .cardOverlayButton {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px !important;
+    bottom: 10px;
+    right: 10px;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.devicesList .cardScalable {
+    aspect-ratio: 16/9
+}
+
+.devicesList .cardPadder {
+    display: none
+}
+
+.itemSelectionPanel {
+    background: linear-gradient(180deg, rgba(0, 0, 0, .75), transparent 21%);
+    border: 1px solid var(--accent1-light);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: .5em
+}
+
+.dialogContainer .card .cardImageContainer:after,
+.dialogContainer .card .cardImageContainer:before {
+    display: none !important
+}
+
+:not(.dashboardDocument) .mainDrawer {
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+    background: rgba(0, 0, 0, .5)
+}
+
+:not(.dashboardDocument) .mainDrawer.drawer-open {
+    -webkit-backdrop-filter: blur(35px);
+    backdrop-filter: blur(35px)
+}
+
+:not(.dashboardDocument) .mainDrawer.drawer-open .scrollContainer {
+    mask-image: none;
+    -webkit-mask-image: none;
+}
+
+:not(.dashboardDocument) .mainDrawer .navMenuOption:after {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .1s linear;
+    width: 100%;
+    z-index: -1
+}
+
+:not(.dashboardDocument) .mainDrawer .navMenuOption .navMenuOptionIcon {
+    transition: margin-right .1s linear
+}
+
+:not(.dashboardDocument) .mainDrawer .navMenuOption-selected {
+    background: linear-gradient(130deg, var(--accent2-light), var(--accent1-light)) !important
+}
+
+:not(.dashboardDocument) .mainDrawer .navMenuOption:hover .navMenuOptionIcon {
+    margin-right: 1.46em
+}
+
+:not(.dashboardDocument) .mainDrawer .navMenuOption:hover:after {
+    opacity: 1
+}
+
+.mainDrawer.drawer-open .scrollContainer::-webkit-scrollbar-track {
+    box-shadow: none !important
+}
+
+.mainDrawer.drawer-open .scrollContainer::-webkit-scrollbar-track-piece {
+    background: transparent !important
+}
+
+.inputContainer {
+    position: relative
+}
+
+.inputContainer .inputLabel {
+    font-size: .95em;
+    position: absolute;
+    top: -1.2em;
+    transition: top .25s, font-size .25s
+}
+
+.inputContainer .inputLabel-float:not(.inputContainer .inputLabelFocused) {
+    font-size: 1.2em;
+    top: 0
+}
+
+.inputContainer .emby-input {
+    background: transparent;
+    border: none;
+    border-bottom: .1em solid hsla(0, 0%, 100%, .7);
+    border-radius: 0 !important
+}
+
+.inputContainer .emby-input:focus {
+    border-color: var(--accent2-light) !important
+}
+
+.emby-select {
+    background: transparent;
+    border: none !important;
+    border-bottom: .1em solid hsla(0, 0%, 100%, .7) !important;
+    border-radius: 0 !important
+}
+
+.emby-select:focus {
+    border-color: var(--accent2-light) !important
+}
+
+.emby-select:focus~.selectArrowContainer {
+    transform: rotate(180deg)
+}
+
+.selectArrowContainer {
+    transition: transform .1s
+}
+
+.checkboxOutline {
+    background-color: #063660 !important;
+    border-color: #063660 !important;
+    border-radius: 5px !important
+}
+
+span.checkboxLabel {
+    position: relative
+}
+
+span.checkboxLabel:after {
+    background-color: #fff;
+    bottom: -.2em;
+    content: "";
+    height: .1em;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease-in-out;
+    width: 100%
+}
+
+.emby-checkbox:focus-visible+span.checkboxLabel:after {
+    transform: scaleX(1)
+}
+
+.checkboxIcon-checked,
+.emby-checkbox-label .checkboxIcon-checked {
+    align-items: center;
+    display: block !important;
+    justify-content: center;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform .1s, opacity .1s
+}
+
+.emby-checkbox:checked+span+.checkboxOutline>.checkboxIcon-checked {
+    display: flex !important;
+    opacity: 1;
+    transform: rotate(0deg) scale(1)
+}
+
+.emby-textarea {
+    background: transparent;
+    border: none;
+    border-bottom: .1em solid hsla(0, 0%, 100%, .7);
+    border-radius: 0 !important;
+    width: 100%
+}
+
+.emby-textarea:focus {
+    border-color: var(--accent2-light) !important
+}
+
+.checkboxList.paperList {
+    background: rgba(0, 0, 0, .5) !important;
+    border-radius: 10px !important;
+    overflow: auto !important
+}
+
+.paperList {
+    background: transparent !important;
+    border-radius: 20px;
+    overflow: hidden
+}
+
+.paperList .listItem {
+    background: rgba(0, 0, 0, .5);
+    border: none !important;
+    border-radius: 8px;
+    margin-bottom: .3em;
+    transition: background .25s
+}
+
+.paperList .listItem:last-child {
+    border: none;
+    margin-bottom: 0 !important
+}
+
+.paperList .listItem:focus-visible,
+.paperList .listItem:hover {
+    background: rgba(0, 0, 0, .5)
+}
+
+.paperList .listItemIcon {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused {
+    color: var(--accent2-light)
+}
+
+#myPreferencesMenuPage .listItem {
+    border-radius: 10px;
+    transition: background .25s
+}
+
+#myPreferencesMenuPage .listItem:hover {
+    background: #000
+}
+
+#myPreferencesMenuPage .listItem:hover .listItemIcon {
+    margin-right: .5em
+}
+
+#myPreferencesMenuPage .listItem-border {
+    border: none !important
+}
+
+#myPreferencesMenuPage .listItemIcon {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: margin-right .25s
+}
+
+.dialog {
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background: rgba(0, 0, 0, .4);
+    border-radius: 15px !important;
+    overflow: hidden
+}
+
+.dialog .smoothScrollY {
+    max-height: 100%
+}
+
+.dialog .emby-button:not(.cardImageContainer, .actionSheetMenuItem) {
+    background: transparent !important
+}
+
+.dialog .emby-button:not(.cardImageContainer, .actionSheetMenuItem):after {
+    all: unset !important
+}
+
+.dialog .emby-button.actionSheetMenuItem {
+    background: transparent !important
+}
+
+.dialog .cardText {
+    display: block !important
+}
+
+.dialog .actionSheetContent {
+    margin: 10px !important;
+    padding: 0 !important
+}
+
+.dialog .actionSheetScroller {
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    padding: 0 !important
+}
+
+.dialog .actionSheetMenuItem {
+    border-radius: 5px !important
+}
+
+.filterDialogContent {
+    height: 100%;
+    overflow: auto
+}
+
+a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption) {
+    margin-bottom: .3em;
+    position: relative;
+    text-decoration: none !important
+}
+
+a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption).button-link {
+    color: var(--accent2-light)
+}
+
+a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):after {
+    background: currentColor;
+    bottom: -.1em;
+    content: "" !important;
+    height: .1em;
+    left: 0 !important;
+    position: absolute;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform .1s ease-in-out;
+    width: 100%
+}
+
+a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover:after {
+    transform: scale(1);
+    transform-origin: left
+}
+
+.sliderBubble {
+    background: transparent;
+    border-radius: 20px;
+    overflow: hidden
+}
+
+.chapterThumbTextContainer {
+    background: linear-gradient(0deg, #000 .25em, rgba(0, 0, 0, .25), transparent) !important;
+    padding: .5em .25em !important
+}
+
+#indexPage .sectionTitle {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 1.6em
+}
+
+#indexPage .sectionTitle:before {
+    background: #fff;
+    content: "";
+    height: 2px;
+    margin-right: .5em;
+    width: 1.3em
+}
+
+#indexPage .emby-scroller .emby-button:not(.cardOverlayButton) {
+    background: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .75);
+    margin-right: 1.2em;
+    overflow: hidden
+}
+
+#indexPage .emby-scroller .emby-button:not(.cardOverlayButton):after {
+    all: unset
+}
+
+#indexPage .emby-scroller .emby-button:not(.cardOverlayButton):hover {
+    background: rgba(0, 0, 0, .5)
+}
+
+#indexPage .section0 .emby-scrollbuttons {
+    display: none
+}
+
+#indexPage .section0 .itemsContainer {
+    flex-wrap: wrap
+}
+
+/*From Jellyskin@12.4.1 */
+
+.itemDetailPage {
+    padding-top: 6em !important;
+}
+/*
+#itemDetailPage .mediaInfoItem {
+    border-radius: 10vh;
+    white-space: nowrap
+}
+
+#itemDetailPage .detailRibbon {
+    background: transparent;
+    font-size: 2.2vh;
+    height: 7.2em;
+    margin-top: 10vh!important;
+    position: static !important
+}
+
+#itemDetailPage .detailRibbon .itemMiscInfo {
+    margin-bottom: 0 !important
+}
+
+#itemDetailPage .detailImageContainer .card {
+    border-radius: 10px;
+    left: 3.3%;
+    top: calc(50% + 1em);
+    transform: translateY(-50%);
+    width: 25vw
+}
+
+#itemDetailPage .detailPageWrapperContainer {
+    width: 100vw
+}
+
+#itemDetailPage .mainDetailButtons .emby-button:not([data-action=resume], [data-action=play]) {
+    background: transparent !important
+}
+*/
+#itemDetailPage .detailLogo {
+    display: none
+}
+
+#itemDetailPage .emby-button {
+    align-items: center;
+    background: transparent !important;
+    border-radius: 10vh;
+    flex-flow: row;
+    justify-content: center;
+    /*margin-right: .5em !important;*/
+    text-decoration: none
+}
+
+#itemDetailPage .cardOverlayButton-br > button {
+    align-items: center;
+    background: transparent !important;
+    border-radius: 10vh;
+    flex-flow: row;
+    justify-content: center;
+    /*margin-right: .5em !important;*/
+    text-decoration: none
+}
+
+#itemDetailPage .emby-button[is=emby-linkbutton] {
+    color: unset
+}
+
+#itemDetailPage .paper-icon-button-light:not(.cardOverlayFab-primary):hover,
+#itemDetailPage .emby-button:not([is=emby-linkbutton], .cardOverlayFab-primary):hover {
+    background: hsla(0, 0%, 100%, .1) !important;
+    color: #fff !important;
+	border-radius: 100em !important;
+}
+
+
+#itemDetailPage .cardOverlayButton-br > button:hover {
+    background: hsla(0, 0%, 100%, .1) !important;
+    color: #fff
+}
+
+
+#itemDetailPage .emby-button:not([is=emby-linkbutton]):after {
+    display: none
+}
+
+#itemDetailPage .emby-button[title=Play],
+#itemDetailPage .emby-button[title=Resume] {
+    background: hsl(0deg 0% 50% / 50%) !important;
+    color: #fff;
+    gap: .2em;
+    margin-right: .5em;
+    padding: .6em 1.1em .6em 1em!important
+}
+
+#itemDetailPage .emby-button[title=Play]:after,
+#itemDetailPage .emby-button[title=Resume]:after {
+    background: transparent;
+    content: attr(title);
+    display: block;
+    font-size: 1.3em;
+    font-weight: 400;
+    height: -moz-fit-content;
+    height: fit-content;
+    opacity: 1;
+    position: static
+}
+
+.mediaInfoOfficialRating {
+	border: 0 solid currentColor;
+	color: #0c0c0c;
+    background: rgb(225 225 225 / 90%);
+    border-radius: 1em;
+    font-size: 95%;
+    height: 1.4em;
+	line-height: 1.8em;
+    padding: 0 .8em;
+}
+/*
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem .paper-icon-button-light[data-action=menu]:after {
+    content: "";
+    margin-left: 100%
+}
+*/
+
+/* Smaller play button */
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem .paper-icon-button-light[data-action=resume] {
+    border-radius: 10px!important;
+    font-size: 1.25em;
+}
+ /* NOT rounded thumbnails list */
+ #itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItemImage-large {
+    border-radius: 6px!important;
+    
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .indicator {
+    border-radius: 0 6px 0 6px!important;
+}
+/*
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem-overview {
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItemBody {
+    width: 95%
+}
+
+#itemDetailPage .listItem {
+    flex-flow: column !important
+}
+
+#itemDetailPage .listItem[data-mediatype=Audio] {
+    flex-flow: row !important;
+    grid-column: auto/span 3
+}
+*/
+
+.layout-mobile #itemDetailPage .itemBackdrop {
+    background-image: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    filter: blur(10px) brightness(50%);
+    height: 80vh !important;
+    left: -10px;
+    margin-top: 0 !important;
+    mask-image: linear-gradient(180deg, #000, transparent);
+    -webkit-mask-image: linear-gradient(180deg, #000, transparent);
+    position: absolute !important;
+    top: 0;
+    width: calc(100vw + 20px)
+}
+
+.layout-mobile #itemDetailPage .detailRibbon {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: flex-end;
+    margin-top: 0 !important
+}
+
+.layout-mobile #itemDetailPage .detailImageContainer {
+    overflow: hidden;
+    padding: 0 !important;
+    position: static
+}
+
+.layout-mobile #itemDetailPage .detailImageContainer .card {
+    filter: none !important;
+    margin: 0 !important;
+    max-width: 50vw !important;
+    min-width: 50vw;
+    position: static !important;
+    top: 0;
+    transform: none
+}
+
+.layout-mobile #itemDetailPage .detailImageContainer .cardBox {
+    box-shadow: none;
+    margin: 0 !important
+}
+
+.layout-mobile #itemDetailPage .itemMiscInfo {
+    justify-content: flex-start
+}
+
+.layout-mobile #itemDetailPage .infoText {
+    text-align: start;
+    width: -moz-fit-content !important;
+    width: fit-content !important
+}
+
+.layout-mobile #itemDetailPage .infoWrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding: 0 !important
+}
+
+.layout-mobile #itemDetailPage .mainDetailButtons {
+    flex-wrap: nowrap;
+    gap: 1em !important;
+    justify-content: flex-start;
+    overflow: auto;
+    width: 100%
+}
+
+.layout-mobile #itemDetailPage .mainDetailButtons .emby-button[title=Play],
+.layout-mobile #itemDetailPage .mainDetailButtons .emby-button[title=Resume] {
+    background: transparent !important;
+    border: none !important;
+    overflow: visible;
+    padding: .7em
+}
+
+.layout-mobile #itemDetailPage .mainDetailButtons .emby-button[title=Play]:after,
+.layout-mobile #itemDetailPage .mainDetailButtons .emby-button[title=Resume]:after {
+    all: unset !important
+}
+
+.layout-mobile #itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list {
+    grid-template-columns: 1fr
+}
+
+.layout-mobile #itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItemImage {
+    flex-basis: 20vh;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%
+}
+
+.layout-mobile #itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem-bottomoverview {
+    font-size: 88%;
+    margin-bottom: 1em;
+    margin-top: .2em;
+    padding: 0 1em 1em
+}
+
+.layout-mobile #itemDetailPage .emby-button {
+    margin: 0 !important
+}
+
+@media (orientation:landscape) {
+    .layout-mobile #itemDetailPage .detailRibbon {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10vh !important
+    }
+
+    .layout-mobile #itemDetailPage .detailRibbon .infoWrapper {
+        align-items: center;
+        display: grid;
+        flex-basis: 50vw;
+        flex-direction: row;
+        grid-template-areas: "card name" "card info"
+    }
+
+    .layout-mobile #itemDetailPage .detailRibbon .infoWrapper .detailImageContainer {
+        grid-area: card
+    }
+
+    .layout-mobile #itemDetailPage .detailRibbon .infoWrapper .nameContainer {
+        align-self: self-end;
+        grid-area: name;
+        justify-self: flex-end;
+        text-overflow: ellipsis;
+        width: calc(100% - 1.2em)
+    }
+
+    .layout-mobile #itemDetailPage .detailRibbon .infoWrapper .itemMiscInfo-primary {
+        align-self: self-start;
+        grid-area: info;
+        justify-self: flex-end;
+        text-overflow: ellipsis;
+        width: calc(100% - 1.2em)
+    }
+
+    .layout-mobile #itemDetailPage .detailRibbon .infoText {
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        font-size: 3.2em;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        overflow: hidden;
+        text-align: start;
+        width: -moz-fit-content !important;
+        width: fit-content !important
+    }
+
+    .layout-mobile #itemDetailPage .detailImageContainer .card {
+        max-width: 40vw !important;
+        min-width: 20vw;
+        width: 100%
+    }
+
+    .layout-mobile #itemDetailPage .mainDetailButtons {
+        flex-basis: 50vw;
+        font-size: 1.5em;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: -moz-fit-content;
+        width: fit-content
+    }
+
+    .layout-mobile #itemDetailPage .parentName a {
+        text-align: start
+    }
+}
+
+/*From Jellyskin@12.4.1*/
+
+@media (min-width:40em) {
+    .dashboardDocument .skinBody {
+        width: calc(100% - 20em)
+    }
+}
+
+.dashboardDocument .headerTabs {
+    margin-left: 0;
+    width: auto
+}
+
+.dashboardColumn:first-child .dashboardSection .paperList {
+    background: rgba(0, 0, 0, .5) !important;
+    color: hsla(0, 0%, 100%, .7);
+    font-size: 1.1em
+}
+
+.layout-mobile .dashboardDocument .headerTabs {
+    width: 100%
+}
+
+.MuiBox-root .mainAnimatedPages {
+    height: auto;
+    overflow: visible;
+    width: 100%
+}
+
+body.dashboardDocument {
+    overflow: auto !important
+}
+
+body.dashboardDocument div[data-role=page] {
+    height: -moz-fit-content;
+    height: fit-content;
+    left: 0 !important;
+    /*mask-image: none !important;
+    -webkit-mask-image: none !important;*/
+    overflow: visible;
+    position: relative !important;
+    width: 100%
+}
+/*
+#loginPage {
+    mask-image: none;
+    -webkit-mask-image: none
+}
+*/
+#loginPage:after {
+    background: url(https://cdn.jsdelivr.net/gh/prayag17/JellySkin/src/assets/background.png);
+    background-size: cover;
+    content: "";
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: -1
+}
+
+#loginPage>div {
+    left: 50%;
+    max-width: 50vw;
+    min-width: 40vw;
+    padding: 0 !important;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2
+}
+
+#loginPage #divUsers {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: auto
+}
+
+#loginPage #divUsers .card {
+    width: 30%
+}
+
+#loginPage #divUsers .card .cardBox {
+    box-shadow: none !important
+}
+
+#loginPage .emby-button {
+    background: transparent;
+    border: .2em solid
+}
+
+#loginPage .emby-button:after {
+    all: unset !important
+}
+
+#loginPage .emby-button:focus-visible,
+#loginPage .emby-button:hover {
+    background: hsla(0, 0%, 100%, .2)
+}
+
+#loginPage .checkboxOutline {
+    background: transparent !important;
+    border: .152em solid #fff !important
+}
+
+#loginPage .emby-input:focus,
+#loginPage .inputLabelFocused {
+    border-bottom-color: #fff !important;
+    color: #fff !important
+}
+
+.layout-mobile #loginPage>div {
+    max-width: 85vw;
+    width: 85vw
+}
+
+@media (orientation:portrait) and (max-width:43em) {
+    .nowPlayingInfoContainer {
+        align-items: center;
+        justify-content: center
+    }
+
+    .nowPlayingPageImageContainer {
+        flex-grow: 0
+    }
+}
+
+.nowPlayingSongName {
+    font-size: 1.5em;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.subtitleSync {
+    left: 0;
+    top: 8em
+}
+
+.subtitleSyncContainer {
+    background-color: rgba(0, 0, 0, .75)
+}
+
+.sliderBubble,
+.subtitleSyncContainer {
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px)
+}
+
+.sliderBubble {
+    background: rgba(0, 0, 0, .75)
+}

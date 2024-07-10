@@ -1,0 +1,54 @@
+.layout-mobile #itemDetailPage .itemBackdrop {
+    display: block !important
+}
+
+.layout-mobile #itemDetailPage .parentName,
+.layout-mobile #itemDetailPage .parentNameLast {
+    display: block !important;
+    font-size: 1.6em !important
+}
+
+.layout-mobile #itemDetailPage .detailLogo:not(.hide),
+body #itemDetailPage .itemBackdrop {
+    display: none !important
+}
+
+body #itemDetailPage .parentName,
+body #itemDetailPage .parentNameLast {
+    font-size: 0 !important
+}
+
+body #itemDetailPage .nameContainer .parentName a {
+    border-radius: 0 !important;
+    font-size: 0;
+    height: 16vh;
+    left: 32.435vw;
+    position: absolute;
+    top: 10vh;
+    width: 25vw
+}
+
+body #itemDetailPage .detailRibbon {
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 0
+}
+
+body #itemDetailPage .detailLogo:not(.hide) {
+    background-position: 0;
+    display: block !important;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 32.425vw;
+    margin-top: 0 !important;
+    position: static
+}
+
+body #itemDetailPage .detailLogo.hide+.detailPageWrapperContainer>.detailPagePrimaryContainer {
+    margin-top: 0vh !important;
+}
+
+body #itemDetailPage .detailLogo.hide+.detailPageWrapperContainer>.detailPagePrimaryContainer>.infoWrapper>.nameContainer>.itemName {
+    display: block !important;
+    font-size: 2.5em !important
+}
