@@ -1,4 +1,4 @@
-# Medusa - A modern theme for Jellyfin
+# Medusa - A modern CSS theme for Jellyfin
 
 ### Home
 ![](.github/images/Homescreen.jpg)
