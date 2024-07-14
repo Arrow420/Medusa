@@ -6,9 +6,9 @@
 ![](.github/images/Favourites.jpg)
 
 
-## Installation
+## Usage
 ```
-@import
+@import url("Medusa.css");
 ```
 
 
