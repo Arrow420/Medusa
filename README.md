@@ -1,4 +1,5 @@
 # Medusa - A modern CSS theme for Jellyfin
+<img float="left" src=".github/images/Logo.png" alt="" width="80"/>
 
 ### Home
 ![](.github/images/Homescreen.jpg)
