@@ -57,36 +57,36 @@ display: none;
 
 
 /* Shrink and square (or round) cast thumbnails */
-#castContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {width: 4.2cm !important; font-size: 90% !important;}
-#castContent .card.overflowPortraitCard.personCard.card-withuserdata {width: 4.2cm !important; font-size: 90% !important;}
+#castContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {width: 4.2cm; font-size: 90%;}
+#castContent .card.overflowPortraitCard.personCard.card-withuserdata {width: 4.2cm; font-size: 90%;}
 
 /* Correct image aspect ratio behavior, set border-radius to zero for square tiles */
-#castContent .cardContent-button.cardImageContainer.coveredImage.cardContent.cardContent-shadow.itemAction.lazy {background-size: cover!important; border-radius: 10em !important;}
-#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground1.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 10em !important;}
-#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground2.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 10em !important;}
-#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground3.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 10em !important;}
-#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground4.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 10em !important;}
-#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground5.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 10em !important;}
-#castContent .cardScalable {width: 3.8cm !important; height: 3.8cm !important; border-radius: 10em !important;}
-#castContent .cardOverlayContainer.itemAction {border-radius: 10em !important;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.cardContent.cardContent-shadow.itemAction.lazy {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground1.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground2.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground3.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground4.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground5.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#castContent .cardScalable {width: 3.8cm; height: 3.8cm; border-radius: 2.5cm;}
+#castContent .cardOverlayContainer.itemAction {border-radius: 2.5cm;}
 
 /* Center the mouseover buttons */
 #castContent .cardOverlayButton-br {bottom: 4%; right: 15%; width: 70%;}
 #castContent .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light {margin:auto;}
 
 /* Shrink and square (or round) guestCast thumbnails */
-#guestCastContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {width: 4.2cm !important; font-size: 90% !important;}
-#guestCastContent .card.overflowPortraitCard.personCard.card-withuserdata {width: 4.2cm !important; font-size: 90% !important;}
+#guestCastContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {width: 4.2cm; font-size: 90%;}
+#guestCastContent .card.overflowPortraitCard.personCard.card-withuserdata {width: 4.2cm; font-size: 90%;}
 
 /* Correct image aspect ratio behavior, set border-radius to zero for square tiles */
-#guestCastContent .cardContent-button.cardImageContainer.coveredImage.cardContent.cardContent-shadow.itemAction.lazy {background-size: cover!important; border-radius: 10em !important;}
-#guestCastContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground1.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 10em !important;}
-#guestCastContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground2.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 10em !important;}
-#guestCastContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground3.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 10em !important;}
-#guestCastContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground4.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 10em !important;}
-#guestCastContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground5.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 10em !important;}
-#guestCastContent .cardScalable {width: 3.8cm !important; height: 3.8cm !important; border-radius: 10em !important;}
-#guestCastContent .cardOverlayContainer.itemAction {border-radius: 10em !important;}
+#guestCastContent .cardContent-button.cardImageContainer.coveredImage.cardContent.cardContent-shadow.itemAction.lazy {background-size: cover!important; border-radius: 2.5cm;}
+#guestCastContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground1.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#guestCastContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground2.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#guestCastContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground3.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#guestCastContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground4.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#guestCastContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground5.cardContent.cardContent-shadow.itemAction {background-size: cover!important; border-radius: 2.5cm;}
+#guestCastContent .cardScalable {width: 3.8cm; height: 3.8cm; border-radius: 2.5cm;}
+#guestCastContent .cardOverlayContainer.itemAction {border-radius: 2.5cm;}
 
 /* Center the mouseover buttons */
 #guestCastContent .cardOverlayButton-br {bottom: 4%; right: 15%; width: 70%;}

@@ -826,7 +826,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
 #indexPage .section0 .emby-scrollbuttons {
     display: none
 }
-
+/*
 #indexPage .section0 .itemsContainer {
     flex-wrap: wrap
 }
@@ -877,7 +877,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
 #itemDetailPage .emby-button {
     align-items: center;
     background: transparent;
-    border-radius: 10vh;
+    /*border-radius: 10vh;*/
     flex-flow: row;
     justify-content: center;
     /*margin-right: .5em !important;*/
@@ -887,7 +887,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
 #itemDetailPage .cardOverlayButton-br > button {
     align-items: center;
     background: transparent;
-    border-radius: 10vh;
+    /*border-radius: 10vh;*/
     flex-flow: row;
     justify-content: center;
     /*margin-right: .5em !important;*/
@@ -898,19 +898,19 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
     color: unset
 }
 
-#itemDetailPage .paper-icon-button-light:not(.cardOverlayFab-primary):hover,
-#itemDetailPage .emby-button:not([is=emby-linkbutton], .cardOverlayFab-primary):hover {
+#itemDetailPage .mainDetailButtons > .paper-icon-button-light:not(.cardOverlayFab-primary):hover,
+#itemDetailPage .mainDetailButtons > .emby-button:not([is=emby-linkbutton], .cardOverlayFab-primary):hover {
     background: hsla(0, 0%, 100%, .1) !important;
     color: #fff !important;
 	border-radius: 100em !important;
 }
 
-
+/*
 #itemDetailPage .cardOverlayButton-br > button:hover {
     background: hsla(0, 0%, 100%, .1) !important;
     color: #fff
 }
-
+*/
 
 #itemDetailPage .emby-button:not([is=emby-linkbutton]):after {
     display: none
