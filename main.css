@@ -284,6 +284,10 @@ div[data-role=page].page#searchPage {
     transition: background .1s
 }
 
+#itemDetailPage .detailImageContainer > .card > .cardBox {
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+}
+
 .card:not([data-type=Person]) .cardText-secondary {
     padding-bottom: .5em
 }
@@ -346,20 +350,21 @@ div[data-role=page].page#searchPage {
 }
 
 .innerCardFooter {
-    border-radius: 10px;
-    margin-bottom: 5%;
+    border-radius: 0;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 90%
+    width: 100%
 }
 
 .innerCardFooter .itemProgressBar {
     background: hsla(0, 0%, 100%, .3);
-    height: .4em
+    height: .4em;
 }
 
 .innerCardFooter .itemProgressBar .itemProgressBarForeground {
-    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light))
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+	border-radius: 2em;
 }
 
 .cardOverlayContainer {
@@ -750,7 +755,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption) {
 a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption).button-link {
     color: var(--accent2-light)
 }
-
+/*
 a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):after {
     background: currentColor;
     bottom: -.1em;
@@ -767,6 +772,11 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):after {
 a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover:after {
     transform: scale(1);
     transform-origin: left
+}
+*/
+
+a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
+    color: var(--accent2-light)
 }
 
 .sliderBubble {
@@ -866,7 +876,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover:after {
 
 #itemDetailPage .emby-button {
     align-items: center;
-    background: transparent !important;
+    background: transparent;
     border-radius: 10vh;
     flex-flow: row;
     justify-content: center;
@@ -876,7 +886,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover:after {
 
 #itemDetailPage .cardOverlayButton-br > button {
     align-items: center;
-    background: transparent !important;
+    background: transparent;
     border-radius: 10vh;
     flex-flow: row;
     justify-content: center;
