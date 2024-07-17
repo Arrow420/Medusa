@@ -78,7 +78,7 @@ div[data-role=page].page#searchPage {
 
 .emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button),
 .emby-button[is=emby-button]:not(.emby-tab-button) {
-    background: #063660;
+    /*background: #063660;*/
     border-radius: 100vh;
     overflow: hidden
 }
@@ -418,7 +418,7 @@ div[data-role=page].page#searchPage {
 
 /* Make watched icon more transparent */
 .cardIndicators .indicator, .listItemIndicators, .indicator, .playedIndicator {
-    opacity: 0.9 !important;
+    opacity: 1.0 !important;
 }
 
 [data-isfolder=true]:is([data-type=CollectionFolder], [data-type=UserView]):not([data-type=Series]) .cardText {
@@ -876,22 +876,22 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
 
 #itemDetailPage .emby-button {
     align-items: center;
-    background: transparent;
+    /*background: transparent;*/
     /*border-radius: 10vh;*/
     flex-flow: row;
     justify-content: center;
     /*margin-right: .5em !important;*/
-    text-decoration: none
+    /*text-decoration: none*/
 }
 
 #itemDetailPage .cardOverlayButton-br > button {
     align-items: center;
-    background: transparent;
+    /*background: transparent;*/
     /*border-radius: 10vh;*/
     flex-flow: row;
     justify-content: center;
     /*margin-right: .5em !important;*/
-    text-decoration: none
+    /*text-decoration: none*/
 }
 
 #itemDetailPage .emby-button[is=emby-linkbutton] {
