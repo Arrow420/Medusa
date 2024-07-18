@@ -56,11 +56,13 @@ display: none;
 }
 
 /* Shrink and square (or round) cast thumnails */
+#guestCastContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 #castContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
 	width: 4.2cm !important;
 	font-size: 90% !important;
 }
 
+#guestCastContent .card.overflowPortraitCard.personCard.card-withuserdata,
 #castContent .card.overflowPortraitCard.personCard.card-withuserdata {
 	width: 4.2cm !important;
 	font-size: 90% !important;
@@ -149,7 +151,7 @@ background: rgba(0, 0, 0, 0);
 
 /* Make watched icon more transparent */
 .cardIndicators .indicator, .listItemIndicators, .indicator, .playedIndicator {
-    opacity: 1.0 !important;
+    opacity: 0.9 !important;
 }
 
 /* Hide Tags */
@@ -323,4 +325,13 @@ background: rgba(0, 0, 0, 0);
 /*Modify subtitle settings page*/
 .subtitleappearance-preview {
   background: linear-gradient(140deg,#444,#111) !important;
+}
+
+/* Shrink fullscreen dialog to a windows */
+@media (max-width: 80em), (max-height: 45em) {
+    .dialog-fixedSize, .dialog-fullscreen-lowres {
+		height: 80% !important;
+        width: 60% !important;
+		position: relative !important;
+    }
 }

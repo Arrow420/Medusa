@@ -755,7 +755,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption) {
 a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption).button-link {
     color: var(--accent2-light)
 }
-/*
+
 a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):after {
     background: currentColor;
     bottom: -.1em;
@@ -773,7 +773,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover:after {
     transform: scale(1);
     transform-origin: left
 }
-*/
+
 
 a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
     color: var(--accent2-light)
