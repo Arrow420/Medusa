@@ -9,7 +9,7 @@
 
 ## Usage
 ```
-@import url("Medusa.css");
+@import url("https://cdn.jsdelivr.net/gh/Arrow420/Medusa@main/Medusa.css");
 ```
 
 
