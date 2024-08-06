@@ -119,6 +119,9 @@ display: none;
 background-color: #000000;
 filter: brightness(50%);
 }
+
+/* .backdropImage {filter: blur(2px)!important;} */
+
 /*
 @media all and (min-width: 50em) {
 .homePage .emby-scroller {
@@ -215,11 +218,11 @@ background: rgba(0, 0, 0, 0);
 /* Jellyskin Colors */
 
 :root {
---accent1-light: #a95bc2;
---accent1-dark: #3f2348;
---accent1-light-opacity1: rgba(169, 91, 194, .4);
---accent2-light: #00a4db;
---accent2-dark: #003d52
+    --accent1-light: #a95bc2;
+    --accent1-dark: #3f2348;
+    --accent1-light-opacity1: rgba(169, 91, 194, .4);
+    --accent2-light: #00a4db;
+    --accent2-dark: #003d52
 }
 /* Skip Intro Button */
 
@@ -341,3 +344,72 @@ background: rgba(0, 0, 0, 0);
 .cardScalable > a[style*="Logo"] {
 	background-size: contain !important;
 }
+
+/* Display disc art correctly */
+.cardBox:has(.cardScalable > a[style*="Disc"]) {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+.cardScalable:has(a[style*="Disc"]) {
+	box-shadow: none !important;
+}
+
+/* Dont underline 'Next Up' title on hover*/
+.sectionTitleTextButton > .sectionTitle {
+	text-decoration: none !important;
+}
+
+/* Item detail page play button tweaks 
+#itemDetailPage .emby-button[title=Play], #itemDetailPage .emby-button[title=Resume] {
+    background: #adc6ff !important;
+    color: #051d55;
+}
+
+/* TV rating symbol */
+#itemDetailPage .mediaInfoItem.mediaInfoOfficialRating {
+   background: hsla(0, 0%, 100%, 0.8);
+   border: none;
+   border-radius: 10px;
+   color: #000;
+   font-weight: 600;
+   white-space: nowrap;
+}
+
+/* Change Header LOGO 
+.pageTitleWithDefaultLogo {
+    background-image: url(../../assets/img/banner-light.png) !important;
+}
+
+/* Subtitle dropdown menu styling */
+.trackSelections > .selectContainer > .detailTrackSelect:not(:disabled) {
+	border: none !important;
+    box-shadow: 0 0 .1em rgba(0, 0, 0, .3);
+    border-bottom: .05em solid hsl(0deg 0% 0% / 35%) !important;
+	background-color: rgba(64, 71, 89, .5);
+    border-radius: .5em!important;
+    backdrop-filter: blur(5px);
+	padding: .5em .5em;
+}
+.trackSelections > .selectContainer > .detailTrackSelect:disabled {padding: 0!important;}
+
+/*Glow accent on hover
+.raised.homeLibraryButton {
+    border: solid 1px var(--accent2-light) !important;
+}
+
+
+.cardOverlayContainer {
+  outline: 4px solid var(--accent2-light)!important;
+  box-shadow: 0 0 5px rgb(var(--accent2-light))!important;
+}
+
+.cardOverlayContainer {
+    background: rgba(0, 0, 0, 0)!important;
+}
+
+/* Hide Card Buttons 
+.libraryPage .cardOverlayButton,
+.cardOverlayButton-br {
+	display: none!important;
+}
+*/

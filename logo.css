@@ -20,12 +20,13 @@ body #itemDetailPage .parentNameLast {
 
 body #itemDetailPage .nameContainer .parentName a {
     border-radius: 0 !important;
+    display: block;
     font-size: 0;
     height: 16vh;
     left: 32.435vw;
     position: absolute;
-    top: 10vh;
-    width: 25vw
+    top: -8vw;
+    width: 25vw;
 }
 
 body #itemDetailPage .detailRibbon {

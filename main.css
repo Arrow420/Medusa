@@ -184,7 +184,7 @@ div[data-role=page].page#searchPage {
 }
 
 .cardOverlayContainer {
-    background: rgba(0, 0, 0, .5)
+    background: rgba(0, 0, 0, 0.5)
 }
 
 .cardImageIcon {
@@ -210,8 +210,7 @@ div[data-role=page].page#searchPage {
 }
 
 .backdropCard > .cardBox > .cardScalable:not(.imageEditorCard) .cardImageContainer {
-    background-size: fill !important;
-    background-size: fill !important;
+    /*background-size: cover !important;*/
 	background-color: rgba(0, 0, 0, .2);
 	box-shadow: none !important;
 }
@@ -294,7 +293,7 @@ div[data-role=page].page#searchPage {
 
 .card:focus-visible .cardBox,
 .card:hover .cardBox {
-    background: rgba(0, 0, 0, .5)
+    background: rgba(0, 0, 0, 0)
 }
 
 
@@ -338,7 +337,7 @@ div[data-role=page].page#searchPage {
 
 .cardPadder-square {
     aspect-ratio: 0 !important;
-    padding: 0
+    padding-bottom: 100%;
 }
 
 .cardPadder-square+div {
@@ -796,7 +795,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    font-size: 1.6em
+    font-size: 1.6em;
 }
 
 #indexPage .sectionTitle:before {
@@ -916,26 +915,33 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
     display: none
 }
 
-#itemDetailPage .emby-button[title=Play],
-#itemDetailPage .emby-button[title=Resume] {
-    background: hsl(0deg 0% 50% / 50%) !important;
-    color: #fff;
-    gap: .2em;
-    margin-right: .5em;
-    padding: .6em 1.1em .6em 1em!important
+#itemDetailPage .emby-button[title="Play"],
+#itemDetailPage .emby-button[title="Resume"] {
+   background: #fff !important;
+   color: #000;
+   gap: 0.6em;
+   margin-right: 0.5em;
+   padding: 0.4em 1em !important;
+   width: 10vw;
 }
-
-#itemDetailPage .emby-button[title=Play]:after,
-#itemDetailPage .emby-button[title=Resume]:after {
-    background: transparent;
-    content: attr(title);
-    display: block;
-    font-size: 1.3em;
-    font-weight: 400;
-    height: -moz-fit-content;
-    height: fit-content;
-    opacity: 1;
-    position: static
+#itemDetailPage .emby-button[title="Play"]:after,
+#itemDetailPage .emby-button[title="Resume"]:after {
+   background: transparent;
+   content: attr(title);
+   display: block;
+   font-size: 1.5em;
+   font-weight: 500;
+   height: -moz-fit-content;
+   height: fit-content;
+   opacity: 1;
+   position: static;
+   width: -moz-fit-content;
+   width: fit-content;
+}
+#itemDetailPage .emby-button[title="Play"]:hover,
+#itemDetailPage .emby-button[title="Resume"]:hover {
+   background: #ccc !important;
+   color: #000;
 }
 
 .mediaInfoOfficialRating {
