@@ -344,6 +344,10 @@ div[data-role=page].page#searchPage {
     aspect-ratio: 1
 }
 
+.localUsers > .card > .cardBox > .cardScalable > .cardPadder {
+	padding-bottom: 0 !important;
+}
+
 .cardImageContainer.defaultCardBackground {
     background: transparent
 }

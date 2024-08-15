@@ -385,9 +385,9 @@ background: rgba(0, 0, 0, 0);
 	border: none !important;
     box-shadow: 0 0 .1em rgba(0, 0, 0, .3);
     border-bottom: .05em solid hsl(0deg 0% 0% / 35%) !important;
-	background-color: rgba(64, 71, 89, .5);
+	background-color: rgba(32, 49, 75, 0.75);
     border-radius: .5em!important;
-    backdrop-filter: blur(5px);
+    /*backdrop-filter: blur(5px);*/
 	padding: .5em .5em;
 }
 .trackSelections > .selectContainer > .detailTrackSelect:disabled {padding: 0!important;}
@@ -413,3 +413,8 @@ background: rgba(0, 0, 0, 0);
 	display: none!important;
 }
 */
+
+/* Dashboard top right user menu thing */
+.css-jg702w {
+	border-radius: 10px;
+}
