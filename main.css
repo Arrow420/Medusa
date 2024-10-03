@@ -227,7 +227,7 @@ div[data-role=page].page#searchPage {
     width: calc(100% + 20px);
     z-index: -1
 }
-*/
+
 .card:focus-visible .cardImageContainer:after,
 .card:hover .cardImageContainer:after {
     transform: scale(1)
@@ -908,13 +908,6 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
 	border-radius: 100em !important;
 }
 
-/*
-#itemDetailPage .cardOverlayButton-br > button:hover {
-    background: hsla(0, 0%, 100%, .1) !important;
-    color: #fff
-}
-*/
-
 #itemDetailPage .emby-button:not([is=emby-linkbutton]):after {
     display: none
 }
@@ -941,11 +934,6 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
    position: static;
    width: -moz-fit-content;
    width: fit-content;
-}
-#itemDetailPage .emby-button[title="Play"]:hover,
-#itemDetailPage .emby-button[title="Resume"]:hover {
-   background: #ccc !important;
-   color: #000;
 }
 
 .mediaInfoOfficialRating {
