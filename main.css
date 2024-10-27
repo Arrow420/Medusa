@@ -201,6 +201,9 @@ div[data-role=page].page#searchPage {
     overflow: hidden;
     position: relative;
     width: calc(100% + 1px);
+}
+
+.cardScalable:has(.lazy-hidden) {
 	background: linear-gradient(130deg, var(--accent1-dark), var(--accent2-dark)) !important;
 }
 
