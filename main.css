@@ -200,7 +200,8 @@ div[data-role=page].page#searchPage {
     box-shadow: none !important;
     overflow: hidden;
     position: relative;
-    width: calc(100% + 1px)
+    width: calc(100% + 1px);
+	background: linear-gradient(130deg, var(--accent1-dark), var(--accent2-dark)) !important;
 }
 
 .cardScalable>* {
@@ -873,6 +874,12 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
     background: transparent !important
 }
 */
+
+#itemDetailPage .cardScalable:has(.lazy-hidden) {
+    aspect-ratio: 2/3;
+}
+
+
 #itemDetailPage .detailLogo {
     display: none
 }

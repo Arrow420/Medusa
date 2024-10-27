@@ -45,11 +45,15 @@ body #itemDetailPage .detailLogo:not(.hide) {
     position: static
 }
 
-body #itemDetailPage .detailLogo.hide+.detailPageWrapperContainer>.detailPagePrimaryContainer {
+body #itemDetailPage .detailLogo.hide+.detailPageWrapperContainer > .detailPagePrimaryContainer {
     margin-top: 0vh !important;
 }
 
-body #itemDetailPage .detailLogo.hide+.detailPageWrapperContainer>.detailPagePrimaryContainer>.infoWrapper>.nameContainer>.itemName {
+body #itemDetailPage .detailLogo.hide+.detailPageWrapperContainer > .detailPagePrimaryContainer > .infoWrapper > .nameContainer > .itemName {
     display: block !important;
     font-size: 2.5em !important
+}
+
+body #itemDetailPage:has(.detailLogo.hide) {
+    padding-top: 12em !important;
 }
