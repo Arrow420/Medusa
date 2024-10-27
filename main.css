@@ -203,10 +203,6 @@ div[data-role=page].page#searchPage {
     width: calc(100% + 1px);
 }
 
-.cardScalable:has(.lazy-hidden) {
-	background: linear-gradient(130deg, var(--accent1-dark), var(--accent2-dark)) !important;
-}
-
 .cardScalable>* {
     border-radius: 0 !important;
     box-shadow: none !important;
@@ -878,10 +874,10 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
 }
 */
 
-#itemDetailPage .cardScalable:has(.lazy-hidden) {
+#itemDetailPage .cardScalable:not(:has(.blurhash-canvas)) {
     aspect-ratio: 2/3;
+	background: linear-gradient(130deg, var(--accent1-dark), var(--accent2-dark)) !important;
 }
-
 
 #itemDetailPage .detailLogo {
     display: none
