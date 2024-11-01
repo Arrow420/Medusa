@@ -442,3 +442,17 @@ background: rgba(0, 0, 0, 0);
     height: 153px !important;
 }
 */
+
+#itemDetailPage .cardScalable:not(:has(.blurhash-canvas))::before {
+    content: "\e7fd";
+    font-family: 'Material Icons Round' !important;
+	font-size: 20rem;
+	background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    background-clip: text;
+	color: transparent;
+	opacity: 75%;
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}

@@ -682,7 +682,7 @@ span.checkboxLabel:after {
 }
 
 #myPreferencesMenuPage .listItem:hover {
-    background: #000
+    background: rgba(0,0,0,.33);
 }
 
 #myPreferencesMenuPage .listItem:hover .listItemIcon {
