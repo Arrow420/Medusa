@@ -53,4 +53,21 @@ sub-filter-regex-enable=yes
 sub-filter-jsre=opensubtitles|addic7ed|subscene|(English - US - SDH)|dreaMaker7|(sync.+?corrected by)|(www\.tvsubtitles\.net)
 sub-ass-force-margins=yes
 sub-use-margins=no
+sub-gray=yes
+#Netflix
+sub-font="Netflix Sans"
+sub-font-size=39
+profile-restore = copy
+sub-color="#FFFFFF"
+sub-border-size=1.3
+sub-blur=0.9
+sub-border-color="#000000"
+sub-shadow-color="#000000"
+sub-shadow-offset=0
+sub-bold=yes
+sub-ass-force-margins=no
+sub-ass-force-style=Kerning=yes
+sub-margin-x=100
+sub-margin-y=62
+sub-ass-override=yes
 ```
