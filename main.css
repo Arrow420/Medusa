@@ -875,7 +875,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
 */
 
 #itemDetailPage .cardScalable:not(:has(.blurhash-canvas)) {
-    aspect-ratio: 2/3;
+    /*aspect-ratio: 2/3;*/
 	background: linear-gradient(130deg, var(--accent1-dark), var(--accent2-dark)) !important;
 }
 

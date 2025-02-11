@@ -346,6 +346,7 @@ background: rgba(0, 0, 0, 0);
 
 .cardScalable > a[style*="Logo"] {
 	background-size: contain !important;
+	background-color: transparent !important;
 }
 
 /* Display disc art correctly */
@@ -353,7 +354,7 @@ background: rgba(0, 0, 0, 0);
     background: rgba(0, 0, 0, 0) !important;
 }
 
-.cardScalable:has(a[style*="Disc"]) {
+.cardScalable:has(a[style*="Disc"]), .cardScalable:has(a[style*="Logo"]) {
 	box-shadow: none !important;
 }
 
@@ -386,8 +387,8 @@ background: rgba(0, 0, 0, 0);
 /* Subtitle dropdown menu styling */
 .trackSelections > .selectContainer > .detailTrackSelect:not(:disabled) {
 	border: none !important;
-    box-shadow: 0 0 .1em rgba(0, 0, 0, .3);
-    border-bottom: .05em solid hsl(0deg 0% 0% / 35%) !important;
+    box-shadow: 0 0 .1em rgba(0, 0, 0, .25);
+    border-bottom: .01em solid rgba(0, 0, 0, 0.25) !important;
 	background-color: rgba(32, 49, 75, 0.75);
     border-radius: .5em!important;
     /*backdrop-filter: blur(5px);*/
@@ -443,6 +444,8 @@ background: rgba(0, 0, 0, 0);
 }
 */
 
+/* Make person pages without images look better */
+
 #itemDetailPage .cardScalable:not(:has(.blurhash-canvas))::before {
     content: "\e7fd";
     font-family: 'Material Icons Round' !important;
@@ -456,3 +459,53 @@ background: rgba(0, 0, 0, 0);
     margin-right: 2rem;
     margin-top: 2rem;
 }
+
+
+
+/* Collections */
+
+/*.squareCard:not(:has(a[style*="Disc"]))*/
+ 
+ @media (min-width: 87.5em) {
+    .collectionItemsContainer > .portraitCard, .smallBackdropCard {
+        width: 22%;
+    }
+}
+@media (min-width: 75em) {
+    .collectionItemsContainer > .portraitCard, .smallBackdropCard {
+        width: 22%;
+    }
+}
+@media (min-width: 50em) {
+    .collectionItemsContainer > .portraitCard, .smallBackdropCard {
+        width: 22%;
+    }
+}
+
+.sectionTitleContainer > .sectionTitle {
+	padding-bottom: .33em;
+}
+
+/* Episode Collections force 16:9 thumbnails */
+
+#itemDetailPage .collectionItemsContainer > .card[data-type*="Episode"] > div > .cardScalable {
+	aspect-ratio: 16/9 !important;
+}
+
+ @media (min-width: 87.5em) {
+    .collectionItemsContainer > .card[data-type*="Episode"] {
+        width: 30%;
+    }
+}
+@media (min-width: 75em) {
+    .collectionItemsContainer > .card[data-type*="Episode"] {
+        width: 30%;
+    }
+}
+@media (min-width: 50em) {
+    .collectionItemsContainer > .card[data-type*="Episode"] {
+        width: 30%;
+    }
+}
+
+/* Disc images in favourties tab etc edgecase sceneario */
