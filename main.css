@@ -118,7 +118,7 @@ div[data-role=page].page#searchPage {
     border-radius: 10px
 }
 
-.skipIntro {
+.skip-button {
     background: #063660 !important;
     border: none;
     border-radius: 100vh;
@@ -131,11 +131,11 @@ div[data-role=page].page#searchPage {
     right: 8em
 }
 
-.skipIntro:hover {
+.skip-button:hover {
     box-shadow: 0 0 15px #000 !important
 }
 
-.skipIntro:after {
+.skip-button:after {
     background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
     content: "";
     height: 100%;
@@ -148,13 +148,13 @@ div[data-role=page].page#searchPage {
     z-index: 0
 }
 
-.skipIntro .paper-icon-button-light {
+.skip-button .paper-icon-button-light {
     color: #fff !important;
     z-index: 1
 }
 
-.skipIntro:focus:after,
-.skipIntro:hover:after {
+.skip-button:focus:after,
+.skip-button:hover:after {
     opacity: 1
 }
 

@@ -226,24 +226,26 @@ background: rgba(0, 0, 0, 0);
 }
 /* Skip Intro Button */
 
-.skipIntro {
-  background: rgba(6, 54, 96, 0.75)!important;
+.skip-button {
+  background: rgba(42, 67, 87, 1)!important;
   border: none;
   border-radius: 0.5em;
   bottom: 6em;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
   color: #fff!important;
-  font-size: 1.0em;
+  font-family: sans-serif !important;
+  font-size: 1em;
+  font-weight: normal;
   overflow: hidden;
-  padding: 0.25em;
+  padding: 0.8em 1.2em;
   right: 6em;
 }
 
-.skipIntro:hover {
+.skip-button:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.skipIntro:after {
+.skip-button:after {
   background: linear-gradient(130deg,var(--accent1-light),var(--accent2-light));
   content: "";
   height: 100%;
@@ -256,12 +258,12 @@ background: rgba(0, 0, 0, 0);
   z-index: 0;
 }
 
-.skipIntro .paper-icon-button-light {
+.skip-button .paper-icon-button-light {
   color: #fff!important;
   z-index: 1
 }
 
-.skipIntro:focus:after,.skipIntro:hover:after {
+.skip-button:focus:after,.skip-button:hover:after {
   opacity: 0.85
 }
 
@@ -509,3 +511,12 @@ background: rgba(0, 0, 0, 0);
 }
 
 /* Disc images in favourties tab etc edgecase sceneario */
+
+
+/* Better library page */
+@media (min-height: 31.25em) {
+    [dir=ltr] .padded-right-withalphapicker {
+        padding-right: 3.3% !important;
+        padding-right: max(env(safe-area-inset-right), 3.3%) !important;
+    }
+}
