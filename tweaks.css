@@ -446,7 +446,7 @@ background: rgba(0, 0, 0, 0);
 }
 */
 
-/* Make person pages without images look better */
+/* Make person pages without images look better 
 
 #itemDetailPage .cardScalable:not(:has(.blurhash-canvas))::before {
     content: "\e7fd";
@@ -461,7 +461,7 @@ background: rgba(0, 0, 0, 0);
     margin-right: 2rem;
     margin-top: 2rem;
 }
-
+/*
 
 
 /* Collections */
