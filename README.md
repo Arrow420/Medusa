@@ -36,7 +36,7 @@ Dashboard -> General -> Custom CSS code:
 Paste into "Settings -> Client Settings -> Other - Manual MPV Configuration":
 ```
 sub-font="Segoe UI Semibold"
-sub-font-size=40
+sub-font-size=38
 sub-color="#FFFFFF"
 sub-border-size=1.2
 sub-shadow-offset=0.2
