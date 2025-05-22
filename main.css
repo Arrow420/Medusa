@@ -279,7 +279,7 @@ div[data-role=page].page#searchPage {
     border-radius: 10px;
     /*box-shadow: 0 0 .5em rgba(0, 0, 0, .5);*/
     /*margin: .5em 1.5em 1.5em 0 !important;*/
-    /* overflow: hidden; */
+    overflow: hidden;
     transition: background .1s
 }
 
