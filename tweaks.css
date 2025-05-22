@@ -114,18 +114,20 @@ display: none;
 	margin: auto;
 }
 
-/* Darken background, only works with blue radiance */
+/* Background fallback — always rendered */
 .backgroundContainer {
-  /* gradient starting with 001022, finishing with 31414a */
-  background-color: linear-gradient(180deg, rgba(0, 16, 34, 0.5), rgba(49, 65, 74, 0.5));
-  filter: brightness(50%);
-  /* background-image: url(https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/bg.jpg);  */
-}
-
-/* Apply custom background image ONLY when no backdrop is present */
-.backgroundContainer:not(.backdropImage) {
   background-image: url("https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/bg.jpg");
   filter: brightness(50%);
+  z-index: 0;
+  position: relative;
+}
+
+/* Jellyfin backdrop sits on top (handled by Jellyfin, untouched by you) */
+.backdropImage {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .backdropImage {filter: blur(2px)!important;}
