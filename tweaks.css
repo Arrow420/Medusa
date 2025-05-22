@@ -130,7 +130,9 @@ display: none;
   left: 0;
 }
 
-.backdropImage {filter: blur(2px)!important;}
+.backdropImage {
+  filter: blur(6px) brightness(40%) !important;
+}
 
 /*
 @media all and (min-width: 50em) {
