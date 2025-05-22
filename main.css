@@ -198,7 +198,7 @@ div[data-role=page].page#searchPage {
     aspect-ratio: auto;
     border-radius: 10px 10px 0 0;
     box-shadow: none !important;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     width: calc(100% + 1px);
 }
@@ -279,7 +279,7 @@ div[data-role=page].page#searchPage {
     border-radius: 10px;
     /*box-shadow: 0 0 .5em rgba(0, 0, 0, .5);*/
     /*margin: .5em 1.5em 1.5em 0 !important;*/
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: background .1s
 }
 
@@ -470,7 +470,7 @@ div[data-role=page].page#searchPage {
     background: linear-gradient(180deg, rgba(0, 0, 0, .75), transparent 21%);
     border: 1px solid var(--accent1-light);
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: .5em
 }
 
