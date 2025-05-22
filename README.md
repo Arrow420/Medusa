@@ -1,16 +1,16 @@
-# Medusa - A modern CSS theme for Jellyfin
-<img float="left" src=".github/images/Logo.png" alt="" width="80"/>
+# Fork of Medusa - A CSS theme for Jellyfin
 
 ### Home
-![](.github/images/Homescreen.jpg)
+Subtle changes made to the original Medusa theme.
+<!-- ![](.github/images/Homescreen.jpg)
 
-![](.github/images/Favourites.jpg)
+![](.github/images/Favourites.jpg) -->
 
 
 ## Usage
 Dashboard -> General -> Custom CSS code:
 ```
-@import url("https://cdn.jsdelivr.net/gh/Arrow420/Medusa@main/Medusa.css");
+@import url("https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/Medusa.css");
 ```
 
 

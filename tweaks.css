@@ -116,8 +116,9 @@ display: none;
 
 /* Darken background, only works with blue radiance */
 .backgroundContainer {
-background-color: #000000;
-filter: brightness(50%);
+  background-color: #000000;
+  filter: brightness(50%);
+  background-image: url(https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/bg.jpg) !important; 
 }
 
 /* .backdropImage {filter: blur(2px)!important;} */
