@@ -116,7 +116,7 @@ display: none;
 
 /* Background fallback — always rendered */
 .backgroundContainer {
-  background-image: url("https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/bg.jpg");
+  background-image: url(https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/bg.jpg);
   filter: brightness(50%);
   z-index: 0;
   position: relative;
