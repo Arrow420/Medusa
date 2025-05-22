@@ -125,12 +125,10 @@ display: none;
 /* Apply custom background image ONLY when no backdrop is present */
 .backgroundContainer:not(.backdropImage) {
   background-image: url("https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  filter: brightness(50%);
 }
 
-/* .backdropImage {filter: blur(2px)!important;} */
+.backdropImage {filter: blur(2px)!important;}
 
 /*
 @media all and (min-width: 50em) {
