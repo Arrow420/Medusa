@@ -79,7 +79,7 @@ div[data-role=page].page#searchPage {
 .emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button),
 .emby-button[is=emby-button]:not(.emby-tab-button) {
     /*background: #063660;*/
-    border-radius: 5px;
+    border-radius: 100vh;
     overflow: hidden
 }
 
@@ -94,8 +94,7 @@ div[data-role=page].page#searchPage {
     top: 0;
     transition: opacity .1s linear;
     width: 100%;
-    z-index: -1;
-    border-radius: 5px !important;
+    z-index: -1
 }
 
 .emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button):focus:after,
@@ -116,20 +115,24 @@ div[data-role=page].page#searchPage {
 }
 
 .paper-icon-button-light {
-    border-radius: 10px !important
+    border-radius: 10px
+}
+
+.skip-button-container {
+  bottom: 10%;
 }
 
 .skip-button {
     background: #063660 !important;
     border: none;
-    border-radius: 5px;
+    border-radius: 100vh;
     bottom: 12em;
     box-shadow: 0 0 15px #000;
     color: #fff !important;
     font-size: 1.2em;
     overflow: hidden;
     padding: .5em;
-    right: 8em
+    right: 2em
 }
 
 .skip-button:hover {
@@ -831,7 +834,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
 
 #indexPage .emby-scroller .emby-button:not(.cardOverlayButton) {
     background: rgba(0, 0, 0, .2);
-    border-radius: 5px;
+    border-radius: 10px;
     /* box-shadow: 0 0 .5em rgba(0, 0, 0, .75); */
     margin-right: 1.2em;
     overflow: hidden
