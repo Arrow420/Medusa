@@ -283,6 +283,12 @@ div[data-role=page].page#searchPage {
     transition: background .1s
 }
 
+.card:focus .cardBox.visualCardBox,
+.card:focus .cardBox:not(.visualCardBox) .cardScalable {
+    border-radius: 0.5rem;
+    border-color: #dc0000 !important;
+}
+
 #itemDetailPage .detailImageContainer > .card > .cardBox {
     box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
 }
