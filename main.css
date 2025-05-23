@@ -302,7 +302,7 @@ div[data-role=page].page#searchPage {
 /*  */
 
 #itemDetailPage .detailImageContainer > .card > .cardBox {
-    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    /* box-shadow: 0 0 .5em rgba(0, 0, 0, .5); */
 }
 
 .card:not([data-type=Person]) .cardText-secondary {
