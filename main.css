@@ -285,11 +285,21 @@ div[data-role=page].page#searchPage {
     box-shadow: none !important;
 }
 
+/* No outline on tv */
+
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
     border-width: 0.4em !important;
     border-color: #00a4db !important;
+    box-shadow: none !important;
 }
+
+.cardContent-shadow,
+.cardBox:not(.visualCardBox) .cardPadder {
+    box-shadow: none !important;
+}
+
+/*  */
 
 #itemDetailPage .detailImageContainer > .card > .cardBox {
     box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
