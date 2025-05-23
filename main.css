@@ -95,7 +95,7 @@ div[data-role=page].page#searchPage {
     transition: opacity .1s linear;
     width: 100%;
     z-index: -1;
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 
 .emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button):focus:after,
@@ -116,7 +116,7 @@ div[data-role=page].page#searchPage {
 }
 
 .paper-icon-button-light {
-    border-radius: 10px
+    border-radius: 10px !important
 }
 
 .skip-button {
