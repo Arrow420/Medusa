@@ -285,8 +285,8 @@ div[data-role=page].page#searchPage {
 
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-    border-radius: 0.1rem !important;
-    border-color: --accent1-light !important;
+    border-width: 10px !important;
+    border-color: #a95bc2 !important;
 }
 
 #itemDetailPage .detailImageContainer > .card > .cardBox {
