@@ -325,7 +325,7 @@ div[data-role=page].page#searchPage {
 
 .cardBox-bottompadded > .cardScalable {
     border-radius: 10px!important;
-	box-shadow: 0 0 .5em rgba(0, 0, 0, .75)!important;
+	/* box-shadow: 0 0 .5em rgba(0, 0, 0, .75)!important; */
 }
 
 .cardFooter {
@@ -434,7 +434,7 @@ div[data-role=page].page#searchPage {
 .cardIndicators .indicator,.listItemIndicators .indicator {
     background: linear-gradient(130deg,var(--accent1-light),var(--accent2-light));
     border-radius: 0 10px 0 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,.7);
+    /* box-shadow: 0 0 5px rgba(0,0,0,.7); */
 }
 
 /* Make watched icon more transparent */
@@ -831,7 +831,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
 #indexPage .emby-scroller .emby-button:not(.cardOverlayButton) {
     background: rgba(0, 0, 0, .2);
     border-radius: 10px;
-    box-shadow: 0 0 .5em rgba(0, 0, 0, .75);
+    /* box-shadow: 0 0 .5em rgba(0, 0, 0, .75); */
     margin-right: 1.2em;
     overflow: hidden
 }
