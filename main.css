@@ -289,7 +289,7 @@ div[data-role=page].page#searchPage {
 
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-    border-width: 0.4em !important;
+    /* border-width: 0.4em !important; */
     border-color: #00a4db !important;
     box-shadow: none !important;
 }
