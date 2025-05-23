@@ -280,13 +280,13 @@ div[data-role=page].page#searchPage {
     /*box-shadow: 0 0 .5em rgba(0, 0, 0, .5);*/
     /*margin: .5em 1.5em 1.5em 0 !important;*/
     /* overflow: hidden; */
-    transition: background .1s
+    transition: background .1s;
+    margin: 0 !important;
 }
 
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
     border-width: 10px !important;
-    border-color: #a95bc2 !important;
 }
 
 #itemDetailPage .detailImageContainer > .card > .cardBox {
