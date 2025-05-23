@@ -281,7 +281,8 @@ div[data-role=page].page#searchPage {
     /*margin: .5em 1.5em 1.5em 0 !important;*/
     /* overflow: hidden; */
     transition: background .1s;
-    border-width: 0.4em !important;
+    /* border-width: 0.4em !important; */
+    box-shadow: none !important;
 }
 
 .card:focus .cardBox.visualCardBox,
