@@ -118,16 +118,16 @@ display: none;
 .backgroundContainer {
   background-image: url(https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/bg.jpg);
   filter: brightness(50%);
-  z-index: 0;
-  position: relative;
+  /* z-index: 0;
+  position: relative; */
 }
 
 /* Jellyfin backdrop sits on top (handled by Jellyfin, untouched by you) */
 .backdropImage {
-  z-index: 1;
+  /* z-index: 1;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
 }
 
 .backdropImage {
