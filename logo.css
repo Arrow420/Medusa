@@ -57,3 +57,16 @@ body #itemDetailPage .detailLogo.hide+.detailPageWrapperContainer > .detailPageP
 body #itemDetailPage:has(.detailLogo.hide) {
     padding-top: 12em !important;
 }
+
+  /* replaces Jellyfin logo */
+.adminDrawerLogo img { 
+  content: url(https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/logo_light.png) !important; 
+} 
+
+imgLogoIcon { 
+  content: url(https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/logo_light.png) !important; 
+} 
+
+.pageTitleWithLogo { 
+  background-image: url(https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/logo_light.png) !important; 
+} 
