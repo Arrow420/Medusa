@@ -51,7 +51,6 @@ sub-filter-sdh=yes
 sub-filter-sdh-harder=yes
 sub-filter-regex-enable=yes
 sub-filter-jsre=opensubtitles|addic7ed|subscene|(English - US - SDH)|dreaMaker7|(sync.+?corrected by)|(www\.tvsubtitles\.net)
-sub-ass-force-margins=yes
 sub-use-margins=no
 sub-gray=yes
 ```
