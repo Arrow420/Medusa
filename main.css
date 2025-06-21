@@ -118,6 +118,10 @@ div[data-role=page].page#searchPage {
     border-radius: 10px
 }
 
+.skip-button-container {
+  bottom: 10%;
+}
+
 .skip-button {
     background: #063660 !important;
     border: none;
@@ -128,7 +132,8 @@ div[data-role=page].page#searchPage {
     font-size: 1.2em;
     overflow: hidden;
     padding: .5em;
-    right: 8em
+    right: 2em;
+    margin-right: 1% !important;
 }
 
 .skip-button:hover {
@@ -275,16 +280,34 @@ div[data-role=page].page#searchPage {
 }
 */
 .cardBox {
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, 0);
     border-radius: 10px;
     /*box-shadow: 0 0 .5em rgba(0, 0, 0, .5);*/
     /*margin: .5em 1.5em 1.5em 0 !important;*/
-    overflow: hidden;
-    transition: background .1s
+    /* overflow: hidden; */
+    transition: background .1s;
+    /* border-width: 0.4em !important; */
+    box-shadow: none !important;
 }
 
+/* No outline on tv */
+
+.card:focus .cardBox.visualCardBox,
+.card:focus .cardBox:not(.visualCardBox) .cardScalable {
+    /* border-width: 0.4em !important; */
+    border-color: #00a4db !important;
+    box-shadow: none !important;
+}
+
+.cardContent-shadow,
+.cardBox:not(.visualCardBox) .cardPadder {
+    box-shadow: none !important;
+}
+
+/*  */
+
 #itemDetailPage .detailImageContainer > .card > .cardBox {
-    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    /* box-shadow: 0 0 .5em rgba(0, 0, 0, .5); */
 }
 
 .card:not([data-type=Person]) .cardText-secondary {
@@ -307,7 +330,7 @@ div[data-role=page].page#searchPage {
 
 .cardBox-bottompadded > .cardScalable {
     border-radius: 10px!important;
-	box-shadow: 0 0 .5em rgba(0, 0, 0, .75)!important;
+	/* box-shadow: 0 0 .5em rgba(0, 0, 0, .75)!important; */
 }
 
 .cardFooter {
@@ -416,7 +439,7 @@ div[data-role=page].page#searchPage {
 .cardIndicators .indicator,.listItemIndicators .indicator {
     background: linear-gradient(130deg,var(--accent1-light),var(--accent2-light));
     border-radius: 0 10px 0 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,.7);
+    /* box-shadow: 0 0 5px rgba(0,0,0,.7); */
 }
 
 /* Make watched icon more transparent */
@@ -813,7 +836,7 @@ a[is=emby-linkbutton]:not(.listItem-border, .navMenuOption):hover {
 #indexPage .emby-scroller .emby-button:not(.cardOverlayButton) {
     background: rgba(0, 0, 0, .2);
     border-radius: 10px;
-    box-shadow: 0 0 .5em rgba(0, 0, 0, .75);
+    /* box-shadow: 0 0 .5em rgba(0, 0, 0, .75); */
     margin-right: 1.2em;
     overflow: hidden
 }

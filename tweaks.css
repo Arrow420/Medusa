@@ -114,13 +114,25 @@ display: none;
 	margin: auto;
 }
 
-/* Darken background, only works with blue radiance */
+/* Background fallback — always rendered */
 .backgroundContainer {
-background-color: #000000;
-filter: brightness(50%);
+  background-image: url(https://cdn.jsdelivr.net/gh/mihaipriboi/Jellyfin-Theme-Medusa@main/images/bg.jpg);
+  filter: brightness(50%);
+  /* z-index: 0;
+  position: relative; */
 }
 
-/* .backdropImage {filter: blur(2px)!important;} */
+/* Jellyfin backdrop sits on top (handled by Jellyfin, untouched by you) */
+.backdropImage {
+  /* z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0; */
+}
+
+.backdropImage {
+  filter: blur(6px) brightness(40%) !important;
+}
 
 /*
 @media all and (min-width: 50em) {
@@ -149,7 +161,7 @@ background: rgba(0, 0, 0, 0);
 .cardIndicators .indicator,.listItemIndicators .indicator {
     background: linear-gradient(130deg,var(--accent1-light),var(--accent2-light));
     border-radius: 0 10px 0 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,.7);
+    /* box-shadow: 0 0 5px rgba(0,0,0,.7); */
 }
 
 /* Make watched icon more transparent */
@@ -227,18 +239,18 @@ background: rgba(0, 0, 0, 0);
 /* Skip Intro Button */
 
 .skip-button {
-  background: rgba(42, 67, 87, 1)!important;
+  background: rgb(255, 255, 255)!important;
   border: none;
-  border-radius: 0.5em;
-  bottom: 6em;
+  border-radius: 5px !important;
+  bottom: 0em;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-  color: #fff!important;
+  color: #000000!important;
   font-family: sans-serif !important;
-  font-size: 1em;
-  font-weight: normal;
+  font-size: 1.5em;
+  font-weight: 600;
   overflow: hidden;
-  padding: 0.8em 1.2em;
-  right: 6em;
+  padding: 0.6em 1em;
+  right: 0;
 }
 
 .skip-button:hover {
@@ -368,7 +380,7 @@ background: rgba(0, 0, 0, 0);
 /* Item detail page play button tweaks */
 #itemDetailPage .emby-button[title=Play]:hover, #itemDetailPage .emby-button[title=Resume]:hover {
     /*background: #adc6ff !important;*/
-	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.3);
+	/* box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.3); */
 }
 
 /* TV rating symbol */
@@ -389,7 +401,7 @@ background: rgba(0, 0, 0, 0);
 /* Subtitle dropdown menu styling */
 .trackSelections > .selectContainer > .detailTrackSelect:not(:disabled) {
 	border: none !important;
-    box-shadow: 0 0 .1em rgba(0, 0, 0, .25);
+    /* box-shadow: 0 0 .1em rgba(0, 0, 0, .25); */
     border-bottom: .01em solid rgba(0, 0, 0, 0.25) !important;
 	background-color: rgba(32, 49, 75, 0.75);
     border-radius: .5em!important;
