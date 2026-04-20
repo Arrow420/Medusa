@@ -116,8 +116,13 @@ display: none;
 
 /* Darken background, only works with blue radiance */
 .backgroundContainer {
-background-color: #000000;
-filter: brightness(50%);
+	background-color: #000000;
+	filter: brightness(50%);
+}
+
+/* Collections backdrop 
+#reactroot:has(.div > .pageTitle > a[style*="Collections"]) > .backgroundContainer {
+	background-image: url(https://i.imgur.com/DH0u6kd.png)!important;
 }
 
 /* .backdropImage {filter: blur(2px)!important;} */

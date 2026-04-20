@@ -533,6 +533,7 @@ div[data-role=page].page#searchPage {
     opacity: 1
 }
 
+/*
 .mainDrawer.drawer-open .scrollContainer::-webkit-scrollbar-track {
     box-shadow: none !important
 }
@@ -540,6 +541,7 @@ div[data-role=page].page#searchPage {
 .mainDrawer.drawer-open .scrollContainer::-webkit-scrollbar-track-piece {
     background: transparent !important
 }
+*/
 
 .inputContainer {
     position: relative
