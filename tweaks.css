@@ -525,3 +525,12 @@ background: rgba(0, 0, 0, 0);
         padding-right: max(env(safe-area-inset-right), 3.3%) !important;
     }
 }
+
+/* Star ratings */
+.starIcon {
+    background: linear-gradient(to right, #90cea1, #01b4e4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: -0.125em;
+    transform: translateY(-0.02em);
+}

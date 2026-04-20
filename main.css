@@ -10,11 +10,13 @@
     padding-top: 1em !important
 }
 
+/*
 .scrollY {
     mask-image: none;
     -webkit-mask-image: none;
     padding: 1em 0
 }
+*/
 
 .pageTabContent {
     padding: 0 1em
@@ -33,7 +35,7 @@
 ::selection {
     background: var(--accent2-light)
 }
-
+/*
 .layout-desktop body,
 .layout-mobile body {
     display: flex;
@@ -41,6 +43,7 @@
     flex-wrap: nowrap;
     overflow-y: scroll;
 }
+*/
 /*
 div#reactRoot {
     display: flex;
