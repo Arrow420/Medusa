@@ -6,15 +6,21 @@
 
 ![](.github/images/Favourites.jpg)
 
+![](.github/images/Sidemenu.jpg)
 
 ## Usage
 Dashboard -> General -> Custom CSS code:
 ```
 @import url("https://cdn.jsdelivr.net/gh/Arrow420/Medusa@main/Medusa.css");
 ```
-
+Settings:
+```
+Settings -> Display -> Theme: Select 'Blue Radience'
+Settings -> Display -> Theme: Tick 'Backdrops'
+```
 
 ### Library
+![](.github/images/Library_Thumbview.jpg)
 ![](.github/images/Library_Posterview.jpg)
 
 
@@ -22,6 +28,8 @@ Dashboard -> General -> Custom CSS code:
 ![](.github/images/SeriesOverview.jpg)
 
 ![](.github/images/Season.jpg)
+
+![](.github/images/Episode.jpg)
 
 ![](.github/images/MovieOverview.jpg)
 
@@ -31,7 +39,7 @@ Dashboard -> General -> Custom CSS code:
 
 
 ------------------------------
-### Custom Subtitle styling for Jellyfin Media Player
+### My Custom Subtitle styling for Jellyfin Media Player
 ![](.github/images/Subtitles.jpg)
 Paste into "Settings -> Client Settings -> Other - Manual MPV Configuration":
 ```
@@ -48,7 +56,7 @@ sub-shadow-color="#000000"
 sub-fix-timing=no
 stretch-image-subs-to-screen=no
 sub-filter-sdh=yes
-sub-filter-sdh-harder=yes
+sub-filter-sdh-harder=no
 sub-filter-regex-enable=yes
 sub-filter-jsre=opensubtitles|addic7ed|subscene|(English - US - SDH)|dreaMaker7|(sync.+?corrected by)|(www\.tvsubtitles\.net)
 sub-use-margins=no
