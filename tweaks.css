@@ -151,10 +151,11 @@ background: rgba(0, 0, 0, 0);
     top: 0!important
 }
 
-.cardIndicators .indicator,.listItemIndicators .indicator {
+.cardIndicators .indicator, .listItemIndicators .indicator {
     background: linear-gradient(130deg,var(--accent1-light),var(--accent2-light));
     border-radius: 0 10px 0 10px;
     box-shadow: 0 0 5px rgba(0,0,0,.7);
+	color: white !important;
 }
 
 /* Make watched icon more transparent */
@@ -529,6 +530,7 @@ background: rgba(0, 0, 0, 0);
 /* Star ratings */
 .starIcon {
     background: linear-gradient(to right, #90cea1, #01b4e4);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: -0.125em;
@@ -546,4 +548,10 @@ background: rgba(0, 0, 0, 0);
 /* Move the poster image on details page to same position as before, in this case add padding to the top*/
 .layout-desktop .detailImageContainer .card {
     top: -4em !important;
+}
+
+
+/* Change heart / favourite button to a darker shade of red  */
+.ratingbutton-icon-withrating {
+    color: #cc3333 !important;
 }
