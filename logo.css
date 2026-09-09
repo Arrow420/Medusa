@@ -32,7 +32,8 @@ body #itemDetailPage .nameContainer .parentName a {
 body #itemDetailPage .detailRibbon {
     height: -moz-fit-content;
     height: fit-content;
-    margin-top: 0
+    margin-top: 0;
+    padding-left: 8vw !important;
 }
 
 body #itemDetailPage .detailLogo:not(.hide) {

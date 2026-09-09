@@ -19,6 +19,8 @@ Settings -> Display -> Theme: Select 'Blue Radience'
 Settings -> Display -> Theme: Tick 'Backdrops'
 ```
 
+(Note: Use ```Settings -> Display -> Display Mode: Desktop (Legacy)``` for the time being if your server is on the new 12.0 version, migration & fixes are still WIP for this theme)
+
 ### Library
 ![](.github/images/Library_Thumbview.jpg)
 ![](.github/images/Library_Posterview.jpg)

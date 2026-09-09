@@ -515,7 +515,7 @@ background: rgba(0, 0, 0, 0);
     }
 }
 
-/* Disc images in favourties tab etc edgecase sceneario */
+/* Disc images in favorites tab etc edgecase sceneario */
 
 
 /* Better library page */
@@ -533,4 +533,17 @@ background: rgba(0, 0, 0, 0);
     -webkit-text-fill-color: transparent;
     margin-left: -0.125em;
     transform: translateY(-0.02em);
+}
+
+
+/* Fixes 12.0 for Legacy Desktop Display Mode */
+
+/* cast etc should be the same width as the top section eg. movie description and stuff like that */
+.detailPageSecondaryContainer {
+    padding-left: 32.45vw !important;
+}
+
+/* Move the poster image on details page to same position as before, in this case add padding to the top*/
+.layout-desktop .detailImageContainer .card {
+    top: -4em !important;
 }
